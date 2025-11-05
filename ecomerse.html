@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Simple E-Commerce Website</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: #f5f5f5;
+    }
+    header {
+        background: #222;
+        padding: 15px;
+        color: white;
+        text-align: center;
+        font-size: 24px;
+        letter-spacing: 1px;
+    }
+    nav {
+        background: #ff7a00;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 20px;
+        font-weight: bold;
+    }
+    nav a:hover {
+        text-decoration: underline;
+    }
+    .container {
+        padding: 20px;
+        text-align: center;
+    }
+    .products {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .card {
+        background: white;
+        width: 220px;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+    }
+    .card img {
+        width: 100%;
+        border-radius: 5px;
+    }
+    .card h3 {
+        font-size: 18px;
+    }
+    .btn {
+        display: block;
+        background: #ff7a00;
+        padding: 8px;
+        margin-top: 10px;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    form {
+        background: white;
+        width: 350px;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+    }
+    input {
+        width: 100%;
+        padding: 8px;
+        margin: 8px 0;
+        border-radius: 4px;
+        border: 1px solid #aaa;
+    }
+    footer {
+        background: #222;
+        color: white;
+        text-align: center;
+        padding: 12px;
+        margin-top: 20px;
+    }
+</style>
+
+</head>
+<body>
+
+<header>🛍 ShopEasy - Online Store</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#register">Register</a>
+    <a href="#contact">Contact Us</a>
+    <a href="#about">About Us</a>
+</nav>
+
+<div id="home" class="container">
+    <h2>Welcome to ShopEasy</h2>
+    <p>Your favourite online shopping destination.</p>
+</div>
+
+<div id="products" class="container">
+    <h2>Our Products</h2>
+    <div class="products">
+        <div class="card">
+            <img src="smart.jpg">
+            <h3>Smart Watch</h3>
+            <p>₹1,499</p>
+            <a class="btn">Add to Cart</a>
+        </div>
+        <div class="card">
+            <img src="head.jpg">
+            <h3>Headphones</h3>
+            <p>₹899</p>
+            <a class="btn">Add to Cart</a>
+        </div>
+        <div class="card">
+            <img src="phone.webp">
+            <h3>Smartphone</h3>
+            <p>₹9,999</p>
+            <a class="btn">Add to Cart</a>
+        </div>
+    </div>
+</div>
+
+<div id="register" class="container">
+    <h2>User Registration</h2>
+    <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email ID" required>
+        <input type="password" placeholder="Password" minlength="4" required>
+        <button class="btn" type="submit">Register</button>
+    </form>
+</div>
+
+<div id="contact" class="container">
+    <h2>Contact Us</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="text" placeholder="Your Message" required>
+        <button class="btn" type="submit">Send Message</button>
+    </form>
+</div>
+<div id="about" class="container">
+    <h2>About Us</h2>
+    <p>This website is developed as a simple E-Commerce project for educational purposes. It demonstrates how an online shopping platform works with features like product display, user registration, and contact support. The aim of this project is to understand web design concepts and user interaction.</p>
+</div>
+
+<footer>
+    © 2025 ShopEasy | All Rights Reserved.
+</footer>
+
+</body>
+</html>
